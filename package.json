@@ -1,0 +1,54 @@
+{
+  "name": "@nebutra/errors",
+  "version": "0.1.2",
+  "description": "Unified error handling and API error responses",
+  "private": false,
+  "nebutra": {
+    "status": "foundation",
+    "graph": "core",
+    "productionReady": false
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.15",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.4"
+  },
+  "homepage": "https://github.com/Nebutra/errors#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nebutra/errors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nebutra/errors/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "nebutraMirror": {
+    "sourceRepository": "Nebutra/Nebutra-Sailor",
+    "sourceDirectory": "packages/platform/errors",
+    "sourcePackage": "@nebutra/errors",
+    "sourceSha": "52f5e32a68c31776f02922a8a883910d44265a7f",
+    "canonicalSource": "monorepo"
+  },
+  "packageManager": "pnpm@10.32.1"
+}
